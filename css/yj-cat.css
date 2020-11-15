@@ -1,0 +1,12 @@
+html, body { margin: 0; padding: 0; height: 100%; }
+.header { width: 100%; height: 92px; background:#f8ccc8; float: right; margin-top: auto; box-shadow: 0px 0 10px -1px #888; padding-left: 220px; position: fixed;}
+.nav { width: 220px; height: 100%; float: left; background: #fbe6b1; position: fixed; background-image: linear-gradient(180deg,#fbe6b1 10%,#f7d684 100%);}
+.section { width: 90%; height: 90%; float: left; padding-left: 220px; padding-top: 92px;}
+.logo{ font-size: large; color: white; font-weight: bold; text-shadow: 1px 1px 10px #888;}
+.main-title{color: #858585; }
+.carousel-catPicture{z-index: -1;}
+section div p {font-size: large;}
+section div h3{font-weight: bold;}
+/* .LogoCat{ width: 10%; height: 10%;} */
+/* #f8ccc8 연핑크..?*/
+/* #dddfeb 회색 */

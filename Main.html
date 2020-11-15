@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Main</title>
+
+    <link href="css/yj-cat.css" rel="stylesheet">
+
+    <!-- Bootstrap cdn 설정 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+
+</head>
+
+<body >
+    <header class="header" style="position: absolute;">
+        <h1 class="main-title">&nbsp;&nbsp;&nbsp; 😻고양이에 대한 모든것을 파헤치는 웹 사이트 입니다 (❁´◡`❁)</h1>
+
+    </header>
+    <nav class="nav">
+    <br>
+        <div class="LogoCat" id="LogoCat">
+            <img src="img/logoCat.png"> <span><a href="Main.html" class="logo">Adorable Cats</a></span>
+        </div>
+        <hr style="margin-top: 8px; margin-bottom: 20px; border: 0; border-top: 1.5px solid rgb(212, 212, 212);">
+
+        <div class="col-md-12">
+
+              <!-- 패널 타이틀1 -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">고양이의 모든것</h3>
+              </div>
+                <!-- 사이드바 메뉴목록1 -->
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="CatType.html">고양이 특성 & 습성</a></li>
+                    <li class="list-group-item"><a href="#">고양이 성격형성</a></li>
+                  </ul>
+
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#">고양이 품종</a></li>
+                  </ul>
+            </div>      
+
+              <!-- 패널 타이틀2 -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">고양이가 좋아하는것</h3>
+                </div>
+                  <!-- 사이드바 메뉴목록2 -->
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">고양이 음식</a></li>
+                        <li class="list-group-item"><a href="#">고양이 장난감</a></li>
+                    </ul>
+              </div>
+
+                <!-- 패널 타이틀3 -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">고양이 품종</h3>
+                </div>
+                  <!-- 사이드바 메뉴목록3 -->
+                  <ul class="list-group">
+                    <li class="list-group-item"><a href="#">품종 별 특징</a></li>
+                  </ul>
+              </div>
+
+
+
+
+
+
+
+    </nav>
+
+    <section class="section" >
+        <br>
+        <br>
+
+        <!-- carousel를 구성할 영역 설정 -->
+        <div style="width: 80%; margin-left: 15%; " class="carousel-catPicture">
+            <!-- class에 carousel와 slide 설정. -->
+            <!-- carousel는 특이하게 id를 설정해야 함.-->
+            <div id="carousel-example-generic" class="carousel slide" >
+                <!-- carousel의 지시자 -->
+                <!-- ol태그의 class에 carousel-indicators를 넣는다. -->
+                <ol class="carousel-indicators">
+                <!-- li는 이미지 개수만큼 추가하고 data-target은 carousel id를 가르킨다. -->
+                <!-- data-slide-to는 순서대로 0부터 올라가고 0은 active를 설정한다. -->
+            
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <!-- 실제 이미지 아이템 -->
+                <!-- class는 carousel-inner로 설정하고 role은 listbox에서 설정. -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- 이미지의 개수만큼 item을 만든다. 중요한 포인트는 carousel-indicators의 li 태그 개수와 item의 개수는 일치해야 한다. -->
+                    <div class="item active">
+                    <!-- 아미지 설정- -->
+                    <img src="img/cat1.jpg" style="width:100%">
+                    <!-- 캡션 설정 (생략 가능) -->
+                    </div>
+                    <div class="item">
+                    <img src="img/cat2.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="item">
+                        <img src="img/cat3.jpg" style="width:100%">
+                    </div>
+    
+                    <div class="item">
+                        <img src="img/cat4.jpg" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- 왼쪽 화살표 버튼 -->
+                <!-- href는 carousel의 id를 가르킴. -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <!-- 왼쪽 화살표 -->
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <!-- 오른쪽 화살표 버튼 -->
+                <!-- href는 carousel의 id를 가르킴. -->
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <!-- 오른쪽 화살표 -->
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
+            </div>
+            
+        </div>
+<br>
+
+        <div>
+            <h2 style="margin-left: 45%;">🙇🏻‍♀️고양이 소개🙇🏻‍♀️</h2>
+            <pre style="padding-left: 25rem; margin-left: 10%;">
+            <p>고양이는 식육목 고양이과에 속하는 포유류 입니다.
+들고양이는 약 10만 년에서 7만년 전부터 존재했습니다.
+길들여진 고양이의 기원은 약 1만년 전 중동 지역에서 스스로 숲속을 나와
+사람들이 모여사는 마을에 정착하여 길들여진 아프리카들고양이로 추측됩니다.
+
+수명: 2 – 16년 (야생)
+하루 수면양: 12 – 16시간
+무게: 3.6 – 4.5kg (성체)
+임신기간: 58 – 67일
+크기/높이: 23 – 25cm
+길이: 46cm (꼬리제외)</p>
+            </pre>
+        </div>
+
+
+<br>
+        
+
+    </section>        
+
+    <script>
+        $(function(){
+        // 이미지 슬라이드 컨트롤를 사용하기 위해서는 carousel를 실행.
+        $('#carousel-example-generic').carousel({
+        // 슬라이딩 자동 순환 지연 시간
+        // false면 자동 순환하지 않음.
+        interval: 1000,
+        // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춤.
+        pause: "hover",
+        // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
+        wrap: true,
+        // 키보드 이벤트 설정 여부(?)
+        keyboard : true
+        });
+        });
+    </script>
+        
+  
+</body>
+
+</html>
