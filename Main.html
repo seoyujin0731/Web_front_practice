@@ -19,8 +19,8 @@
 
 <body >
     <header class="header" style="position: absolute;">
-        <h1 class="main-title">&nbsp;&nbsp;&nbsp; 😻고양이에 대한 모든것을 파헤치는 웹 사이트 입니다 (❁´◡`❁)</h1>
-
+        <h1 class="main-title">&nbsp;&nbsp;&nbsp; 😻고양이에 대한 모든것을 파헤치는 웹 사이트 입니다 (❁´◡`❁) </h1> 
+        
     </header>
     <nav class="nav">
     <br>
@@ -38,13 +38,10 @@
               </div>
                 <!-- 사이드바 메뉴목록1 -->
                   <ul class="list-group">
-                    <li class="list-group-item"><a href="CatType.html">고양이 특성 & 습성</a></li>
+                    <li class="list-group-item"><a href="CatCharacter.html">고양이 특성 & 습성</a></li>
                     <li class="list-group-item"><a href="#">고양이 성격형성</a></li>
                   </ul>
 
-                  <ul class="list-group">
-                    <li class="list-group-item"><a href="#">고양이 품종</a></li>
-                  </ul>
             </div>      
 
               <!-- 패널 타이틀2 -->
@@ -66,12 +63,13 @@
                 </div>
                   <!-- 사이드바 메뉴목록3 -->
                   <ul class="list-group">
-                    <li class="list-group-item"><a href="#">품종 별 특징</a></li>
+                    <li class="list-group-item"><a href="CatType.html">품종 별 특징</a></li>
                   </ul>
               </div>
 
+              <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target=".default-example-modal-right-lg" style="background-color:blanchedalmond; background-image: none; margin-left: 50px;" >회원 가입</button>
 
 
 
@@ -158,6 +156,101 @@
 <br>
         
 
+
+        <!-- Modal Right Large -->
+        <div class="modal fade default-example-modal-right-lg" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-right modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title h4">회원가입</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+
+                                 <!-- 폼 삽입-->                       
+                                <form id="js-login" method="post" name="userInsert">
+                                    <div class="form-group row">
+                                        <label class="col-xl-12 form-label" for="fname">ID</label>
+                                        <div class="col-8 pr-1">
+                                            <input type="text" id="user_id" name="user_id"
+                                                class="form-control" placeholder="User Id 5~10자리로 작성해 주세요."
+                                                required>
+                                            <div class="invalid-feedback">ID를 작성해 주세요.</div>
+                                            <p id="id_check" name="id_check" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xl-12 form-label" for="fname">NickName</label>
+                                        <div class="col-8 pr-1">
+                                            <input type="text" class="form-control"
+                                                id="user_nickname" name="user_nickname"
+                                                placeholder="User NickName 4~8자리로 작성해 주세요. " required>
+                                            <div class="invalid-feedback">닉네임을 작성해 주세요.</div>
+                                            <p id="name_check" name="name_check" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xl-12 form-label" for="fname">Email</label>
+                                        <div class="col-8 pr-1">
+                                            <input type="email" class="form-control" id="user_email"
+                                                email="user_email" placeholder="aaaa@aaaa.aaa "
+                                                required>
+                                            <div class="invalid-feedback">이메일을 작성해 주세요.</div>
+                                            <p id="email_check" name="email_check" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xl-12 form-label" for="fname">Password</label>
+                                        <div class="col-8 pr-1">
+                                            <input type="Password" class="form-control"
+                                                placeholder="User Password 8자리이상 작성해 주세요. "
+                                                id="user_pw_test" name="user_pw_test" required>
+                                            <div class="invalid-feedback"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-xl-12 form-label" for="fname">PasswordConfirm</label>
+                                        <div class="col-8 pr-1">
+                                            <input type="Password" class="form-control" id="user_pw"
+                                                name="user_pw"
+                                                placeholder="User Password 8자리이상 작성해 주세요." required>
+                                            <div class="invalid-feedback">비밀번호를 작성해 주세요.</div>
+                                            <p id="pw_check" name="pw_check" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="margin-bottom: 1px">
+                                        <label class="col-xl-12 form-label" for="fname">Gender</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-2">
+                                        <input type="radio" class="custom-control-input"
+                                            id="customControlValidation2" name="tst_user_gender"
+                                            required="" value="M"> <label
+                                            class="custom-control-label" for="customControlValidation2">남성</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input"
+                                            id="customControlValidation3" name="tst_user_gender"
+                                            required="" value="F"> <label
+                                            class="custom-control-label" for="customControlValidation3">여성</label>
+                                        <div class="invalid-feedback">성별을 체크해 주세요.</div>
+                                    </div>
+
+                                </form>
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Sign Up</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </section>        
 
     <script>
@@ -178,6 +271,112 @@
     </script>
         
   
+
+
+
 </body>
+
+<script>
+
+    $("#js-login-btn").click(function(event) {
+                var form = $("#js-login")
+                if (form[0].checkValidity() === false) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.addClass('was-validated');
+            });
+    
+    
+    </script>
+</body>
+
+<script>
+let pattern_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+let pattern_eng = /[a-zA-Z]/;
+let patton = /[\{\}\[\]\/?.,;:|\)*~`!^\-+<>@\#$%&\\\=\(\'\"]/gi; //특수문자 거르기
+let pattonNum = /[^0-9]/g; //숫자 
+let arr = new Array();
+
+$("#user_id")
+        .blur(
+                function() {
+                    let user_id = $('#user_id').val();
+
+                    if (!patton.test(user_id)
+                            && user_id.replace(/\s/gi, "").length == user_id.length
+                            && user_id.length > 4) {
+                        $
+
+                    } 
+
+                    else {
+                        arr[0] = false;
+                        $("#id_check").text("공백 & 특수문자가 포함되어 있습니다 :p");
+                        $("#id_check").css("color", "red");
+                        $("#reg_submit").attr("disabled", true);
+                    }
+
+                });
+
+$("#user_nickname")
+        .blur(
+                function() {
+                    let user_nickname = $('#user_nickname').val();
+                    if (!patton.test(user_nickname)
+                            && user_nickname.replace(/\s/gi, "").length == user_nickname.length
+                            && user_nickname.length > 3) {
+                        $
+
+                    } else {
+                        arr[1] = false;
+                        $("#name_check").text("닉네임 정보가 옳지 않습니다. :p");
+                        $("#name_check").css("color", "red");
+                        $("#reg_submit").attr("disabled", true);
+                    }
+                });
+
+$("#user_email")
+        .blur(
+                function() {
+                    let user_email = $('#user_email').val();
+                    if (user_email.replace(/\s/gi, "").length == user_email.length
+                            && user_email.length > 5) {
+                        $
+
+                    } else {
+                        arr[2] = false;
+                        $("#email_check").text("공백이 포함되어 있습니다 :p");
+                        $("#email_check").css("color", "red");
+                        $("#reg_submit").attr("disabled", true);
+                    }
+                });
+
+$("#user_pw")
+        .blur(
+                function() {
+
+                    let user_pw = $('#user_pw').val();
+
+                    if (user_pw.replace(/\s/gi, "").length == user_pw.length
+                            && user_pw.length > 7
+                            && user_pw_test.length > 7) {
+
+                        arr[3] = true;
+                        $("#pw_check").text("사용가능한 비밀번호입니다. :)");
+                        $("#pw_check").css("color", "blue");
+                        $("#reg_submit").attr("disabled", true);
+
+                    } else {
+                        arr[3] = false;
+                        $("#pw_check").text(
+                                "비밀번호 형식이 아닙니다.(공백,글자 수 제한,비밀번호가 다릅니다) :p");
+                        $("#pw_check").css("color", "red");
+                        $("#reg_submit").attr("disabled", true);
+                    }
+                });
+
+
+</script>
 
 </html>

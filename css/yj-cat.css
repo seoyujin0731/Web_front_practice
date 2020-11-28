@@ -7,6 +7,7 @@ html, body { margin: 0; padding: 0; height: 100%; }
 .carousel-catPicture{z-index: -1;}
 section div p {font-size: large;}
 section div h3{font-weight: bold;}
+tbody tr td {font-size: large; font-weight: bold; text-align: center;}
 /* .LogoCat{ width: 10%; height: 10%;} */
 /* #f8ccc8 연핑크..?*/
 /* #dddfeb 회색 */
