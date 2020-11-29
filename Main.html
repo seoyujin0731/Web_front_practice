@@ -3,8 +3,12 @@
 
 <head>
     <title>Main</title>
+    <meta name="Main" content="메인페이지">
+    <meta name="description" content="고양이 설명">
+    <meta charset="UTF-8">
 
     <link href="css/yj-cat.css" rel="stylesheet">
+    <script type="text/javascript" src="js/cat.js"></script>
 
     <!-- Bootstrap cdn 설정 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -13,13 +17,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
-
-
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
 </head>
 
 <body >
-    <header class="header" style="position: absolute;">
-        <h1 class="main-title">&nbsp;&nbsp;&nbsp; 😻고양이에 대한 모든것을 파헤치는 웹 사이트 입니다 (❁´◡`❁) </h1> 
+    <header class="header" style="position: absolute">
+        <h1 class="main-title" style="text-align: center;">😻고양이에 대한 모든것을 파헤치는 웹 사이트 입니다 (❁´◡`❁)</h1> 
         
     </header>
     <nav class="nav">
@@ -39,7 +43,7 @@
                 <!-- 사이드바 메뉴목록1 -->
                   <ul class="list-group">
                     <li class="list-group-item"><a href="CatCharacter.html">고양이 특성 & 습성</a></li>
-                    <li class="list-group-item"><a href="#">고양이 성격형성</a></li>
+                    <li class="list-group-item"><a href="cat personality.html">고양이 성격형성</a></li>
                   </ul>
 
             </div>      
@@ -51,8 +55,8 @@
                 </div>
                   <!-- 사이드바 메뉴목록2 -->
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">고양이 음식</a></li>
-                        <li class="list-group-item"><a href="#">고양이 장난감</a></li>
+                        <li class="list-group-item"><a href="CatFood.html">고양이 음식</a></li>
+                        <li class="list-group-item"><a href="CatToys.html">고양이 장난감</a></li>
                     </ul>
               </div>
 
@@ -63,7 +67,7 @@
                 </div>
                   <!-- 사이드바 메뉴목록3 -->
                   <ul class="list-group">
-                    <li class="list-group-item"><a href="CatType.html">품종 별 특징</a></li>
+                    <li class="list-group-item"><a href="CatType.html">고양이 품종 </a></li>
                   </ul>
               </div>
 
@@ -175,7 +179,7 @@
                                         <label class="col-xl-12 form-label" for="fname">ID</label>
                                         <div class="col-8 pr-1">
                                             <input type="text" id="user_id" name="user_id"
-                                                class="form-control" placeholder="User Id 5~10자리로 작성해 주세요."
+                                                class="form-controller" placeholder="User Id 5~10자리로 작성해 주세요."
                                                 required>
                                             <div class="invalid-feedback">ID를 작성해 주세요.</div>
                                             <p id="id_check" name="id_check" />
@@ -184,7 +188,7 @@
                                     <div class="form-group row">
                                         <label class="col-xl-12 form-label" for="fname">NickName</label>
                                         <div class="col-8 pr-1">
-                                            <input type="text" class="form-control"
+                                            <input type="text" class="form-controller"
                                                 id="user_nickname" name="user_nickname"
                                                 placeholder="User NickName 4~8자리로 작성해 주세요. " required>
                                             <div class="invalid-feedback">닉네임을 작성해 주세요.</div>
@@ -194,7 +198,7 @@
                                     <div class="form-group row">
                                         <label class="col-xl-12 form-label" for="fname">Email</label>
                                         <div class="col-8 pr-1">
-                                            <input type="email" class="form-control" id="user_email"
+                                            <input type="email" class="form-controller" id="user_email"
                                                 email="user_email" placeholder="aaaa@aaaa.aaa "
                                                 required>
                                             <div class="invalid-feedback">이메일을 작성해 주세요.</div>
@@ -204,7 +208,7 @@
                                     <div class="form-group row">
                                         <label class="col-xl-12 form-label" for="fname">Password</label>
                                         <div class="col-8 pr-1">
-                                            <input type="Password" class="form-control"
+                                            <input type="Password" class="form-controller"
                                                 placeholder="User Password 8자리이상 작성해 주세요. "
                                                 id="user_pw_test" name="user_pw_test" required>
                                             <div class="invalid-feedback"></div>
@@ -213,7 +217,7 @@
                                     <div class="form-group row">
                                         <label class="col-xl-12 form-label" for="fname">PasswordConfirm</label>
                                         <div class="col-8 pr-1">
-                                            <input type="Password" class="form-control" id="user_pw"
+                                            <input type="Password" class="form-controller" id="user_pw"
                                                 name="user_pw"
                                                 placeholder="User Password 8자리이상 작성해 주세요." required>
                                             <div class="invalid-feedback">비밀번호를 작성해 주세요.</div>
@@ -225,13 +229,13 @@
                                     </div>
                                     <div class="custom-control custom-radio mb-2">
                                         <input type="radio" class="custom-control-input"
-                                            id="customControlValidation2" name="tst_user_gender"
+                                            id="customControlValidation2" name="user_gender"
                                             required="" value="M"> <label
                                             class="custom-control-label" for="customControlValidation2">남성</label>
                                     </div>
                                     <div class="custom-control custom-radio">
                                         <input type="radio" class="custom-control-input"
-                                            id="customControlValidation3" name="tst_user_gender"
+                                            id="customControlValidation3" name="user_gender"
                                             required="" value="F"> <label
                                             class="custom-control-label" for="customControlValidation3">여성</label>
                                         <div class="invalid-feedback">성별을 체크해 주세요.</div>
@@ -241,7 +245,7 @@
                     </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Sign Up</button>
+                            <button id="js-login-btn" type="button" class="btn btn-primary" onclick="signUp()">Sign Up</button>
                         </div>
                 </div>
             </div>
@@ -269,35 +273,31 @@
         });
         });
     </script>
-        
-  
 
+    <script>
 
-
-</body>
-
-<script>
-
-    $("#js-login-btn").click(function(event) {
-                var form = $("#js-login")
+        $("#js-login-btn").click(function(event) {
+            var form = $("#js-login")
                 if (form[0].checkValidity() === false) {
                     event.preventDefault()
                     event.stopPropagation()
                 }
-                form.addClass('was-validated');
-            });
-    
+            form.addClass('was-validated');
+        });
     
     </script>
 </body>
 
 <script>
+
+    
 let pattern_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 let pattern_eng = /[a-zA-Z]/;
 let patton = /[\{\}\[\]\/?.,;:|\)*~`!^\-+<>@\#$%&\\\=\(\'\"]/gi; //특수문자 거르기
 let pattonNum = /[^0-9]/g; //숫자 
 let arr = new Array();
 
+// window 객체 메서드 중 focus를 이동하는 .blur 사용
 $("#user_id")
         .blur(
                 function() {
@@ -312,6 +312,7 @@ $("#user_id")
 
                     else {
                         arr[0] = false;
+                        document.documentURI("https://goddaehee.tistory.com/237");
                         $("#id_check").text("공백 & 특수문자가 포함되어 있습니다 :p");
                         $("#id_check").css("color", "red");
                         $("#reg_submit").attr("disabled", true);
@@ -375,6 +376,11 @@ $("#user_pw")
                         $("#reg_submit").attr("disabled", true);
                     }
                 });
+
+
+    function signUp() {
+        alert("회원 가입완료!");
+	}
 
 
 </script>

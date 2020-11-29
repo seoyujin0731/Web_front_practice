@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CatType</title>
-    <meta name="description" content="고양이 종류 별 사진과 특징">
-    <meta charset="UTF-8">
+    <title>Cat Toys</title>
 
     <link href="css/yj-cat.css" rel="stylesheet">
 
@@ -17,12 +15,11 @@
     
 
 
-
 </head>
 
 <body >
     <header class="header">
-        <h1 class="main-title" style="text-align: center;">o(〃＾▽＾〃)o &nbsp;고양이의 품종 별 특징을 소개합니다&nbsp; o(〃＾▽＾〃)o</h1>
+        <h1 class="main-title" style="text-align: center;">🧶 고양이가 좋아하는 장난감들 🧶</h1>
 
     </header>
     <nav class="nav">
@@ -72,56 +69,73 @@
 
 
     </nav>
+
     <section class="section" style="margin-left: 70px;">
         <br>
-        <div>
-            <!-- 테이블 삽입 -->
-            <table id="dt-basic-example" class="table table-bordered table-hover table-striped w-100">
-                <br>
-                                                 
-                <tbody>
-                    <tr>
-                        <td><img src="img/catType/Lagamerpin.jpg"> <br> 라가머핀 </td>
-                        <td><img src="img/catType/Munchkin.jpg"> <br> 먼치킨 </td>
-                        <td><img src="img/catType/Persian.jpg"> <br> 페르시안 </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/catType/rexdoll.jpg"> <br> 렉돌 </td>
-                        <td><img src="img/catType/Russian Blue.jpg"> <br> 러시안 블루 </td>
-                        <td><img src="img/catType/Sphinx.jpg"> <br> 스핑크스 </td>   
-                    </tr>
-                    <tr>
-                        <td><img src="img/catType/Savannah.jpg"> <br> 사바나 </td>
-                        <td><img src="img/catType/American Shorthair.jpg"> <br> 아메리칸 숏헤어 </td>
-                        <td><img src="img/catType/Bombay cat.jpg"> <br> 봄베이 고양이 </td>
-                    </tr>
-
-                </tbody>
-            </table>
-         <br> <br>
-          <!--  <ul class="pagination">
-                <li class="disabled">
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul> 
-           -->                                                                
-        </div>
-
-                                    
-    </section> 
+        <video src="video/catToy.mp4" width="500" height="650" controls autoplay loop style="margin-right: 150px;"></video>
+       
+        <img src="img/Toys/CatWheel.jpg" width="500" height="650" style="vertical-align: top;">
 
 
+        <br>
+        <span id="mySpan" style="color:red">고양이 장난감 낚시대</span>
+        <span id="mySpan1" style="color:red">캣 휠</span>
+
+        <br><br><br>
+        <img src="img/Toys/CatTower.jpg" width="400" height="450" style="vertical-align: top; margin-right: 30px;">
+        <img src="img/Toys/TrackTower.jpg" width="400" height="450" style="vertical-align: top; margin-right: 30px;">
+        <img src="img/Toys/HouseScratcher.jpg" width="400" height="450" style="vertical-align: top;">
+
+        <br><br>
+        <span id="mySpan2" style="color:red">캣 타워</span>
+        <span id="mySpan3" style="color:red">트랙 타워</span>
+        <span id="mySpan4" style="color:red">하우스 스크래쳐</span> 
+        <br><br><br>
+        <p></p>
+    </section>        
+
+
+    <br><br>
+  
+</body>
+
+<script>
+    //돔객체 사용 (스타일 변경)
+var span = document.getElementById("mySpan");
+span.style.color = "#f09f26f5";
+span.style.fontSize = "30px";
+span.style.border = "3px dotted #aaa7a4";
+span.style.margin = "100px";
+
+
+var span = document.getElementById("mySpan1");
+span.style.color = "#f09f26f5";
+span.style.fontSize = "30px";
+span.style.border = "3px dotted #aaa7a4";
+span.style.marginLeft = "370px";
+
+
+
+var span = document.getElementById("mySpan2");
+span.style.color = "#f09f26f5";
+span.style.fontSize = "30px";
+span.style.border = "3px dotted #aaa7a4";
+span.style.marginLeft = "150px";
+span.style.marginBottom = "50px"
+
+var span = document.getElementById("mySpan3");
+span.style.color = "#f09f26f5";
+span.style.fontSize = "30px";
+span.style.border = "3px dotted #aaa7a4";
+span.style.marginLeft = "300px";
+span.style.marginBottom = "50px"
+
+var span = document.getElementById("mySpan4");
+span.style.color = "#f09f26f5";
+span.style.fontSize = "30px";
+span.style.border = "3px dotted #aaa7a4";
+span.style.marginLeft = "260px";
+span.style.marginBottom = "50px"
+</script>
 
 </html>
